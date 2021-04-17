@@ -1,0 +1,37 @@
+html, body {
+    height: 100%;
+}
+
+body{
+    text-align: center;
+    display: grid;
+    background-image: url(bg.jpg);
+    background-repeat: repeat;
+    cursor: zoom-out;
+}
+
+#container {
+    align-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+
+#div0, #div1 {
+     border-style: solid;
+     border: solid black 2px;
+     background-color: rgb(117, 117, 117);
+     height: 800px;
+     width: 500px;
+}
+
+.span {
+    width: 200px;
+    height: 100px;
+    display: border;
+    position: fixed;
+    background-color: rgb(219, 219, 219);
+}
