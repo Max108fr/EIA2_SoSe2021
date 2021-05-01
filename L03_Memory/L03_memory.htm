@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L03_MemorySettings</title>
+    <link rel="stylesheet" href="L03_memory.css">
+    <script src="L03_memory.js" defer></script>
+</head>
+<body>
+    
+    <section id="game">
+        <h2>Make a Memory</h2>
+        <div id="playerbox"></div>
+    </section>
+
+    <form>
+        <fieldset class="formular visible">
+			<legend> </legend> 
+			How many pairs?
+			<input class="stepper" type="number" name="Stepper" step="1" min="2" max="20" value="1" />
+			<hr />
+			Cardsize
+			<input class="slider" type="range" name="Slider" min="100" max="200" step="10" value="100">
+			<hr />
+      Background    
+      <input class="backgroundColor" type="color" name="BGColor" placeholder="red" id="bGcolor" value="#ff0000">
+			<hr />
+			Cardcolor
+			<input class="backsideColor" type="color" name="BSColor" placeholder="red" id="bScolor" value="#ff0000">
+			<hr />
+			Textcolor
+			<input class="fontColor" type="color" name="FColor" placeholder="black" id="font-color" value="#000000">
+			<hr />
+            Fonts		<br>	
+            <input type="radio" name="Radiogroup" value="'Courier New', Courier, monospace" id="radio1" />
+			<label for="radio1">Courier</label>
+			<input type="radio" name="Radiogroup" value="'Arial, Helvetica, sans-serif'" id="radio2" />
+			<label for="radio2">Arial</label>
+			<input type="radio" name="Radiogroup" value="'Times New Roman', Times, serif" id="radio3" />
+			<label for="radio3">Times New Roman</label>
+			<hr />
+			<button type="button" class="start">Start game</button>
+		</fieldset>
+		</form>
+
+</body>
+</html>

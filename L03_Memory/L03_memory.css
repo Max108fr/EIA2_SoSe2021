@@ -1,0 +1,129 @@
+/*   
+  .container {
+    display: grid;
+    align-self: center;
+    grid-gap: 10px;
+    font-size: smaller;
+    grid-template-columns: [head-col-start] 250px [content-col-start] 250px [content-col-mid] 250px [head-col-end];
+    grid-template-rows: [head-row-start] auto [head-row-end] auto [content-row-end] auto [footer-row-end];
+  }
+  
+  .item {
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    font-size: 20px;
+
+  }
+  .header {
+    background: rgb(197, 139, 199);
+    align-content: center;
+  }
+  .sidebar {
+    background: rgb(214, 183, 109);
+  }
+  .content {
+    background: rgb(201, 132, 132);
+  }
+  .footer {
+    background: rgb(140, 211, 149);
+  }
+  .header {
+    grid-column: head-col-start / head-col-end;
+    grid-row: head-row-start / head-row-end;
+  }
+  .sidebar {
+    grid-column: head-col-start / content-col-start;
+    grid-row: head-row-end / content-row-end;
+  }
+  .content {
+    grid-column: content-col-start / head-col-end;
+    grid-row: head-row-end / content-row-end;
+    height: 120px;
+  }
+  .footer {
+    grid-column: head-col-start / head-col-end;
+    grid-row: content-row-end / footer-row-end;
+  }
+} */
+body{
+	font-family: 'Courier New', Courier, monospace;
+}
+button:hover {
+	opacity: 50%;
+}
+
+img {
+
+	width: 40px;
+	height: 40px;
+	}
+
+.card{
+	height: 200px;
+  	width: 200px;
+	margin: 0px 25px 25px 0px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.formular {
+	width: 400px;
+	height: 300px;
+	text-align: center;
+	justify-content: center;
+	margin-top: 100px;
+	margin-left: 70px;
+	background-color: lavender;
+}
+input[type="radio"], input[type="checkbox"], label {
+	display: inline;
+}
+#game{
+	justify-content: center; 
+	text-align: center;
+}
+
+#playerbox{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center; 
+	text-align: center;
+	align-items: center;
+	left: 100px;
+	top: 100px;
+}
+
+
+.p {
+	position: absolute;
+	text-align: center;
+	justify-content: center;
+	margin-top: 20%;
+}
+
+.hidden{
+	background-color: black;
+	cursor: pointer;
+}
+
+.hidden p{
+	display: none;
+}
+
+.open{
+	background-color: rgb(250, 252, 251);
+}
+
+.taken{
+	visibility: hidden;
+}
+
+.taken p{
+	display: none;
+}
+
+.is-hidden {
+	display: none;
+}
