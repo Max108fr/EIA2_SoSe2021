@@ -1,0 +1,14 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background: #4bdbff;
+    text-align: center;
+    padding: 15px;
+}
+.picture{
+    align-self: center;
+}
+.canvas {
+    width:800px;
+    height:400px;
+    background-color: rgb(255, 207, 162);
+}
