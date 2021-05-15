@@ -1,0 +1,26 @@
+body {
+  background-image: url('bg flower.png');
+  background-repeat: repeat;
+  font-family: 'Courier New', Courier, monospace;
+  width: 1280px;
+  height: 600px;
+  text-align: center;
+  align-content: center;
+  }
+  
+  h1 {
+      font-size: xx-large;
+      color: rgb(8, 77, 25);
+    }
+  
+  
+  #canvas {
+      border: 10px solid rgb(201, 191, 49);
+      float: center;
+      margin-left: 50%;
+      margin-right: 50%;
+      margin-top: 25%;
+      width: 100%; 
+      height: 100%;
+  }
+  
