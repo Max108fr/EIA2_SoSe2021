@@ -1,0 +1,60 @@
+html,body {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background: url(/material/bg.jpg.jpg) no-repeat center center fixed; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;   
+    color: rgb(255, 255, 255);
+}
+
+#heading {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 42px;
+    margin: 0px;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 26px;
+    margin-bottom: 0px;
+}
+
+#park {
+    border: #158a42 solid 6px;
+    border-radius: 10px;
+    background-color: #0f6e469f;
+    text-align: center;
+    width: 660px;
+    margin: 5px;
+}
+
+#stocks {
+    border: #3c59ff solid 6px;
+    border-radius: 10px;
+    background-color: #afb4fd75;
+    text-align: center;
+    width: 660px;
+    margin: 5px;
+}
+
+#animalName, #songText {
+    font-family: 'Courier New', Courier;
+    font-style: italic;
+    color: #fffb00;
+}
+
+button {
+    background-color: #6a9ff0;
+    margin: 10px 20px 0px 20px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #15ff48e0;
+}
+/* Background: unsplash; Engin Akyurt
