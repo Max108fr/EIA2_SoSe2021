@@ -1,3 +1,8 @@
+// L09.01 Basis für 10.01/.02
+// Quellen: Invertedclassroom 09.01/10.01/.02; Inspriationen von Mona Kabelka
+
+//Einarbeitung der L01.01 Änderungen in Code je nach Zeit bis Sa.23.59
+
 namespace Park {
     let counter: number = 0;
     let textDOMElement: HTMLElement;
