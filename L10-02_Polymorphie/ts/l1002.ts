@@ -21,7 +21,7 @@ namespace L1002 {
 
     function handleLoad(_event: Event): void {
 
-        let canvas : HTMLCanvasElement | null = document.querySelector("canvas")!;
+        let canvas: HTMLCanvasElement | null = document.querySelector("canvas")!;
         crc2 = <CanvasRenderingContext2D>canvas.getContext("2d")!;
         
         drawBackground();
@@ -53,7 +53,7 @@ namespace L1002 {
         crc2.putImageData(imageData, 0, 0);
 
         for (let moveable of moveables) {
-            moveable.move(1/50);
+            moveable.move(1 / 50);
             moveable.draw();
         }
     }   
@@ -98,26 +98,26 @@ namespace L1002 {
         crc2.fillRect(0, 0, crc2.canvas.width, crc2.canvas.height); 
 }
 
-function drawRunway(_x: number, _y: number, _widthBack: number, _widthFront: number): void {
-    console.log("draw runway");
-    
-    crc2.beginPath();
-    crc2.moveTo(_x + _widthBack / 2, _y);
-    crc2.lineTo(crc2.canvas.width / 2 + _widthFront / 2, crc2.canvas.height);
-    crc2.lineTo(crc2.canvas.width / 2 - _widthFront / 2, crc2.canvas.height);
-    crc2.lineTo(_x - _widthBack / 2, _y);
-    crc2.closePath();
+    function drawRunway(_x: number, _y: number, _widthBack: number, _widthFront: number): void {
+        console.log("draw runway");
+        
+        crc2.beginPath();
+        crc2.moveTo(_x + _widthBack / 2, _y);
+        crc2.lineTo(crc2.canvas.width / 2 + _widthFront / 2, crc2.canvas.height);
+        crc2.lineTo(crc2.canvas.width / 2 - _widthFront / 2, crc2.canvas.height);
+        crc2.lineTo(_x - _widthBack / 2, _y);
+        crc2.closePath();
 
-    let gradient: CanvasGradient = crc2.createLinearGradient(0, _y, 0, crc2.canvas.height);
-    gradient.addColorStop(0, "HSLA(30, 30%, 50%, 0.5)");
-    gradient.addColorStop(1, "HSLA(0, 100%, 10%, 1)");
+        let gradient: CanvasGradient = crc2.createLinearGradient(0, _y, 0, crc2.canvas.height);
+        gradient.addColorStop(0, "HSLA(30, 30%, 50%, 0.5)");
+        gradient.addColorStop(1, "HSLA(0, 100%, 10%, 1)");
 
-    crc2.fillStyle = gradient;
-    crc2.fill();
+        crc2.fillStyle = gradient;
+        crc2.fill();
 
-    crc2.restore();
+        crc2.restore();
 
-}
+    }
 
     function drawMars (_x: number, _y: number): void {
         console.log("draw ground");
