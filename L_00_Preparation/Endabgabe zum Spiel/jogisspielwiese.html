@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style/style.css" />
+
+	<script src="scripts/field.js"></script>
+    <script src="scripts/game.js"></script>
+    <script src="scripts/movable.js"></script>
+    <script src="scripts/vector.js"></script>
+    <script src="scripts/rectangle.js"></script>
+    <script src="scripts/ball.js"></script>
+    <script src="scripts/linesman.js"></script>
+    <script src="scripts/player.js"></script>
+    <script src="scripts/referee.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <title>Jogis Spielwiese EIA2 Endabgabe</title>
+  </head>
+  <body>
+    <main>
+      <div id="gameInfo">
+        <p>Posession: <span id="displayPosession"></span></p>
+        <p>Score: <span id="displayScore"></span></p>
+      </div>
+
+      <canvas id="gameCanvas" width="700" height="910"></canvas>
+
+      <div class="box" id="playerDialog">
+
+        <h3>
+          Selected Player
+          <div class="tooltip">
+            <i class="fas fa-question-circle"></i
+            ><span class="tooltiptext"
+              >Use mouse or "left"/"right" arrow keys to select a player</span>
+          </div>
+		  </h3>
+
+        <span class="hidden" id="selectedPlayer"></span>
+        <p>Number: <span id="displayNumber"></span></p>
+        <p>Team: <span id="displayTeam"></span></p>
+        <p>Inaccuracy: <span id="displayInaccuracy"></span></p>
+        <p>Speed: <span id="displaySpeed"></span></p>
+
+        <button id="removeBtn">Substitute</button>
+        <button id="addBtn">New Player<div class="tooltip">
+			<i class="fas fa-question-circle"></i>
+			<span class="tooltiptext">Choose a position using your mouse. Click to add a new player to the last selected team.</span>
+		  </div></button>
+      </div>
+
+      <div class="box" id="settingsDialog">
+        <h2>Settings</h2>
+        <div id="colorPicker">
+          <h3>Team 1</h3>
+          <p>Color <input id="color1" type="color" /></p>
+          <h3>Team 2</h3>
+          <p>Color <input id="color2" type="color" /></p>
+        </div>
+		
+		<h3>
+			Set skills
+			<div class="tooltip">
+			  <i class="fas fa-question-circle"></i>
+			  <span class="tooltiptext">Set the Minimum and Maximum for Speed and Inaccuracy. You're players will be set with a random number between Min./Max.</span>
+			</div>
+		  </h3>
+		<form onSubmit="return false;" action="">
+          <div class="formSection">
+            <h4>Inaccuracy</h4>
+            <div class="formElement">
+              <label>Min</label>
+              <input required type="number" placeholder="Min" id="minInaccuracy" value="0"/>
+            </div>
+            <div class="formElement">
+              <label>Max</label>
+              <input required type="number" placeholder="Max" id="maxInaccuracy" value="100"/>
+            </div>
+          </div>
+          <div class="formSection">
+            <h4>Speed</h4>
+            <div class="formElement">
+              <label>Min</label>
+              <input required type="number" placeholder="Min" id="minSpeed" value="1"/>
+            </div>
+            <div class="formElement">
+              <label>Max</label>
+              <input required type="number" placeholder="Max" id="maxSpeed" value="4"/>
+            </div>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+
+    <div class="footer">
+      <p>Maximilian Tabori, 266818</p>
+    </div>
+
+    </body>
+</html>
